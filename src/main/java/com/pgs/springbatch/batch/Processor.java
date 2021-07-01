@@ -18,6 +18,7 @@ public class Processor implements ItemProcessor<User, User> {
 		DEPT_NAMES.put("001", "Tecnologia");
 		DEPT_NAMES.put("002", "Operacoes");
 		DEPT_NAMES.put("003", "Contabilidade");
+		DEPT_NAMES.put("004", "BPO");
 	}
 	@Override
 	public User process(User user) throws Exception {
