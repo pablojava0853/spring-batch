@@ -1,5 +1,7 @@
 package com.pgs.springbatch.model;
 
+import java.util.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
@@ -11,6 +13,7 @@ public class User {
 	private String name;
 	private String dept;
 	private Integer salary;
+	private Date time;
 	
 	
 	public User() {
@@ -18,12 +21,13 @@ public class User {
 	}
 	
 	
-	public User(Integer id, String name, String dept, Integer salary) {
+	public User(Integer id, String name, String dept, Integer salary, Date time) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.dept = dept;
 		this.salary = salary;
+		this.time = time;
 	}
 
 
@@ -50,6 +54,16 @@ public class User {
 	}
 	public void setSalary(Integer salary) {
 		this.salary = salary;
+	}
+
+
+	public Date getTime() {
+		return time;
+	}
+
+
+	public void setTime(Date time) {
+		this.time = time;
 	}
 	
 	
